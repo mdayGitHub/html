@@ -31,7 +31,7 @@ A nice aspect of HTML5 is that it streamlines the amount of code that is require
 
 All markup should be delivered as UTF-8, as it is the friendliest for internationalization. It should be designated in head of the document.
 
-Setting the character set using `meta` tags.
+Setting the character set using ``meta`` tags.
 
 ```
 <head>
@@ -59,35 +59,35 @@ The HTML5 specification defines quotes around attributes as optional. For consis
 
 The following are general guidelines for structuring your HTML markup. Authors are reminded to always use markup which represents the semantics of the content in the document being created.
 
-* The `` tag must be an accurate and concise description of a page's content.
-* A class is applied to the ` ` to allow for unique page styling without any additional markup.
+* The ``<title>`` tag must be an accurate and concise description of a page's content.
+* A class is applied to the ``<body>`` to allow for unique page styling without any additional markup.
 * All HTML5 elements must be properly nested.
-* All HTML5 elements must be closed, either with the self-closing format or with a corresponding closing tag ( `` ).
+* All HTML5 elements must be closed, either with the self-closing format or with a corresponding closing tag ( ``</section>`` ).
 * All HTML5 elements must be in lowercase.
-* Use actual `` elements for paragraph delimiters as opposed to multiple `` tags.
+* Use actual ``<p>`` elements for paragraph delimiters as opposed to multiple ``<br>`` tags.
 * Use hyphens to separate words in class and id names, not underscores, camel Case, or other methods.
-* Make use of `` (definition lists) and ` ` , when appropriate.
-* Items in list form should always be housed in a `` , `` , or `` never a set of `` or `` tags.
+* Make use of ``<dl>`` (definition lists) and ``<blockquote>``, when appropriate.
+* Items in list form should always be housed in a ``<ul>`` , ``<ol>`` , or ``<dl>`` never a set of ``<div>`` or ``<p>`` tags.
 * The height and width attributes of image tags are not applied to aid in responsiveness.
-* Place an html comment on some closing ` ` tags to indicate what element you're closing. It will help when there is lots of nesting and indentation.
+* Place an html comment on some closing ``<div>`` tags to indicate what element you're closing. It will help when there is lots of nesting and indentation.
 
 ```
 </div>  <!-- This is the end of the wrapper --> 
 ```
 
 * File Paths - Site resources use relative file paths for efficiency. Content file paths are absolute, assuming content is syndicated.
-* The best location for JavaScript is at the bottom of the HTML document, right before the closing `` tag. This allows every other external component on the page to download as quickly as possible before the scripts are loaded.
-* Always use title-case for headers and titles. Do not use all caps or all lowercase titles in markup, instead apply the CSS property `text-transform: uppercase/lowercase` .
+* The best location for JavaScript is at the bottom of the HTML document, right before the closing ``</body>`` tag. This allows every other external component on the page to download as quickly as possible before the scripts are loaded.
+* Always use title-case for headers and titles. Do not use all caps or all lowercase titles in markup, instead apply the CSS property ``text-transform: uppercase/lowercase`` .
 
 ## Forms
 
-* Use `label` fields to label each form field, the `for` attribute should associate itself with the input field, so users can click the labels. `cursor:pointer; ` on the label is wise. Browsers using HTML5 require an ID set for form elements, so that the labels' FOR attribute can reference them. However; you still need NAME, as otherwise the form submission won't work on some browsers. so: you need both ID (which needs to be unique) *and* NAME (which does not necessarily have to be unique: for instance, with radio buttons that are mutually exclusive, you'd have the same NAME, but different unique IDs for each , as well.
+* Use ``label`` fields to label each form field, the ``for`` attribute should associate itself with the input field, so users can click the labels. ``cursor:pointer;`` on the label is wise. Browsers using HTML5 require an ID set for form elements, so that the labels' FOR attribute can reference them. However; you still need NAME, as otherwise the form submission won't work on some browsers. so: you need both ID (which needs to be unique) *and* NAME (which does not necessarily have to be unique: for instance, with radio buttons that are mutually exclusive, you'd have the same NAME, but different unique IDs for each , as well.
 * Do not use the size attribute on your input fields. The size attribute is relative to the font-size of the text inside the input. Instead use css width.
 
 ## Tables
 
 * Tables shouldn't be used for page layout.
-* Make use of ``, ``, `` and `  `tags (and Scope attribute) when appropriate and table markup with proper syntax (``, ``, ` `and `  [scope]` )
+* Make use of ``<thead>``, ``<tfoot>``, ``<tbody>`` and ``<th>`` tags (and Scope attribute) when appropriate and table markup with proper syntax (``<thead>, ``<tfoot>``, ``<tbody>`` and ``<th> scope]`` )
 
 ```
 <table summary="This is a chart of year-end returns for 2005.">
@@ -116,11 +116,11 @@ The following are general guidelines for structuring your HTML markup. Authors a
 
 * All images must include alternate text (alt attribute), mostly for visually impaired uses but also for validation.
 * All anchors must include title attributes, the title is not meant to be a duplication of the anchor text but is to provide additional / advisory information.
-* The bold ` ` and italicize `` tags refer to visual presentation. This should be handled by the CSS. However, to have a selection of text look bold and have emphasis use a ` ` and an `  ` tag.
+* The bold ``<b>`` and italicize ``<i>`` tags refer to visual presentation. This should be handled by the CSS. However, to have a selection of text look bold and have emphasis use a ``strong`` and an ``em`` tag.
 
 ## References:
 
 "Markup &amp; Templates Styleguide." . Github, n.d. Web. 13 May 2014. https://github.com/styleguide/templates.
 
-[1]: http://sweb2.dmit.nait.ca/Images/DMIT-HTML5-Coding-Best-Practices.pdf
+
   
