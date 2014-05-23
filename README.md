@@ -87,7 +87,7 @@ The following are general guidelines for structuring your HTML markup. Authors a
 ## Tables
 
 * Tables shouldn't be used for page layout.
-* Make use of ``<thead>``, ``<tfoot>``, ``<tbody>`` and ``<th>`` tags (and Scope attribute) when appropriate and table markup with proper syntax (``<thead>, ``<tfoot>``, ``<tbody>`` and ``<th> scope]`` )
+* Make use of ``<thead>``, ``<tfoot>``, ``<tbody>`` and ``<th>`` tags (and Scope attribute) when appropriate and table markup with proper syntax (``<thead>``, ``<tfoot>``, ``<tbody>`` and ``<th> scope]`` )
 
 ```
 <table summary="This is a chart of year-end returns for 2005.">
