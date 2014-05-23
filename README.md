@@ -21,7 +21,7 @@ We will test our markup against the **W3C validator (validator.w3.org)**, to ens
 
 A proper Doctype which triggers standards mode in your browser should always be used. Quirks mode should always be avoided.
 
-A nice aspect of HTML5 is that it streamlines the amount of code that is required. Meaningless attributes have been dropped, and the `` declaration has been simplified significantly. Additionally, there is no need to use `` to escape inline JavaScript, formerly a requirement to meet XML strictness in XHTML.
+A nice aspect of HTML5 is that it streamlines the amount of code that is required. Meaningless attributes have been dropped, and the ``<DOCTYPE>`` declaration has been simplified significantly. Additionally, there is no need to use ``<CDATA>`` to escape inline JavaScript, formerly a requirement to meet XML strictness in XHTML.
 
 ```
 <!DOCTYPE html> 
